@@ -1,0 +1,27 @@
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Add this new section for the marquee */
+@layer utilities {
+  @keyframes scroll-left {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-50%); }
+  }
+  
+  .animate-marquee-rtl {
+    animation: scroll-left 20s linear infinite;
+    width: max-content;
+  }
+
+  /* Add this new section for the floating effect */
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-15px); } /* Moves up by 15px */
+  }
+  
+  .animate-float {
+    animation: float 5s ease-in-out infinite;
+  }
+}
