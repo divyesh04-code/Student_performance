@@ -133,6 +133,7 @@ function Home() {
                             </div>
                             <div className="text-lg md:text-xl font-bold flex items-center">
                                 18 <span className="text-xs md:text-sm ml-1">↑</span>
+                                
                             </div>
                         </div>
 
